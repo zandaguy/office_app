@@ -7,6 +7,8 @@
     <tr>
       <th>Start date</th>
       <th>Paid or not</th>
+      <th>Client id</th>
+      <th>Task id</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +18,8 @@
       <tr>
         <td><%= contract.start_date %></td>
         <td><%= contract.paid_or_not %></td>
+        <td><%= contract.client_id %></td>
+        <td><%= contract.task_id %></td>
         <td><%= link_to 'Show', contract %></td>
         <td><%= link_to 'Edit', edit_contract_path(contract) %></td>
         <td><%= link_to 'Destroy', contract, method: :delete, data: { confirm: 'Are you sure?' } %></td>

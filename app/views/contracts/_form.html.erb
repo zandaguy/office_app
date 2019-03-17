@@ -21,6 +21,16 @@
     <%= form.check_box :paid_or_not, id: :contract_paid_or_not %>
   </div>
 
+  <div class="field">
+    <%= form.label :client_id %>
+    <%= form.text_field :client_id, id: :contract_client_id %>
+  </div>
+
+  <div class="field">
+      <%= form.label :task_id %>
+      <%= form.text_field :task_id, id: :contract_task_id %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
